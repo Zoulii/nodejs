@@ -13,4 +13,5 @@ router.get("/test", (req, res) => {
     });
 });
 
+// We are exporting all the module
 module.exports = router;
