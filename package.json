@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Zoulii/nodejs#readme",
   "dependencies": {
-    "nodemon": "^2.0.7"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.6.0"
   }
 }
