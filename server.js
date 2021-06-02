@@ -5,7 +5,7 @@ import bodyParser from "body-parser";
 
 
 //To be able to use variables in .env file - without it it will be undefined 
-require(".env").config();
+require("dotenv").config();
 
 //Initializing the server
 const app = express();
