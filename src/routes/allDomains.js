@@ -4,6 +4,6 @@ const router = require("express-promise-router")();
 // takes the request of the server, makes a query to a db, then gives the feedback 
 const domainController = require("../controllers/domain.controller");
 
-router.get("/domains", domainController.allDomains)
+router.get("/all", domainController.allDomains)
 
 module.exports = router;

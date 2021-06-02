@@ -2,7 +2,8 @@
 //Import name from package name, is the same like const name = require('package name')
 import express from "express";
 import bodyParser from "body-parser";
-import routes from "./src/routes"
+import routes from "./src/routes";
+import domainRoute from "./src/routes/allDomains";
 
 //To be able to use variables in .env file - without it it will be undefined 
 require("dotenv").config();
@@ -22,6 +23,8 @@ app.listen({ port }, () => {
     console.log(`Server ready at ${port}`)
 })
 
-
+//Giving the server access to server
+app.use(routes);
+app.use("/domain", domainRoute);
 
 

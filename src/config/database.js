@@ -4,7 +4,7 @@ import { Pool } from "pg";
 // 
 require("dotenv").config();
 const pool = new Pool({
-    connectionString: process.send.DATABASE_URL,
+    connectionString: process.env.DATABASE_URL,
 });
 
 //Console.log a successful DB connection msg
