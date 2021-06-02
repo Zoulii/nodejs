@@ -9,3 +9,13 @@ require(".env").config();
 
 //Initializing the server
 const app = express();
+
+//The message from VSC it's just for the server, not depreceated
+app.use(bodyParser.json()); // parse the json 
+app.use(bodyParser.urlencoded({extended: true}));
+
+const port = process.env.PORT || 8000; // PORT it's the name of the variable in .env
+app.listen({port}, () => {
+    console.log(`Server ready at ${port}`)
+})
+
