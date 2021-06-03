@@ -1,7 +1,7 @@
 import { Pool } from "pg";
 
 // Function from postgre , finding new pool of DB, connexion between our application and this DB
-// 
+
 require("dotenv").config();
 const pool = new Pool({
     connectionString: process.env.DATABASE_URL,
